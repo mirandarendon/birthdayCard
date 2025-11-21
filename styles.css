@@ -1,0 +1,85 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: system-ui, sans-serif;
+    background: linear-gradient(135deg, #f7c8ff, #ffe9c7);
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+    color: #2b004f;
+}
+
+.container {
+    text-align: center;
+    padding: 2rem 1.4rem;
+    max-width: 500px;
+    width: 100%;
+}
+
+/* stack like papers */
+.cake-wrapper {
+  position: relative;
+  width: 260px;        /* adjust to whatever looks good */
+  margin: 0 auto 0.6rem;
+}
+
+/* every layer (cake + candles) uses the same box */
+.layer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: block;
+  user-select: none;
+}
+
+/* make the cake the base (rendered first) */
+.cake-wrapper img:first-child {
+  position: relative;  /* puts it at the bottom of the stack */
+}
+
+.candle {
+  cursor: pointer;
+}
+
+/* hide elements */
+.hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+
+
+
+h1 {
+    margin-top: 1.4rem;
+    font-size: 2.2rem;
+}
+
+.main-message {
+    margin-top: 0.6rem;
+    font-size: 1.1rem;
+    opacity: 0.9;
+}
+
+/* note card */
+.note {
+    margin: 1.3rem auto 0;
+    padding: 1rem 1.2rem;
+    border-radius: 18px;
+    background: rgba(255,255,255,0.9);
+    border: 2px dashed #d18bf0;
+    max-width: 360px;
+    transition: 0.3s ease;
+}
+
+.note-title {
+    font-weight: bold;
+    margin-bottom: 0.4rem;
+}
+
+.hint {
+    font-size: 0.9rem;
+    opacity: 0.75;
+    margin-top: 0.35rem
+}
