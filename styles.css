@@ -2,12 +2,12 @@ body {
     margin: 0;
     padding: 0;
     font-family: system-ui, sans-serif;
-    background: linear-gradient(135deg, #f7c8ff, #ffe9c7);
+    background: linear-gradient(135deg, #070c31, #4859b4);
     display: flex;
     justify-content: center;
     align-items: flex-start;
     min-height: 100vh;
-    color: #2b004f;
+    color: #ffffff;
 }
 
 .container {
@@ -69,8 +69,8 @@ h1 {
     margin: 1.3rem auto 0;
     padding: 1rem 1.2rem;
     border-radius: 18px;
-    background: rgba(255,255,255,0.9);
-    border: 2px dashed #d18bf0;
+    background: rgba(41, 22, 181, 0.9);
+    border: 3px dashed #c1d1ff;
     max-width: 360px;
     transition: 0.3s ease;
 }
